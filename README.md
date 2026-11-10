@@ -1,8 +1,8 @@
 # Sistema de Biblioteca — Java e PostgreSQL
 
-Este projeto foi desenvolvido como resolução de uma lista de exercícios de Programação Orientada a Objetos (POO) com Java e Banco de Dados com PostgreSQL.
+Projeto acadêmico desenvolvido como resolução de uma lista de exercícios de **Programação Orientada a Objetos (POO) com Java** e **Banco de Dados com PostgreSQL**.
 
-O sistema tem como objetivo gerenciar o acervo de uma biblioteca, permitindo o controle de livros, revistas, usuários e empréstimos, aplicando conceitos de programação orientada a objetos e banco de dados relacionais.
+O objetivo é desenvolver um sistema de gerenciamento de biblioteca, aplicando conceitos de orientação a objetos, modelagem de dados e consultas SQL.
 
 ## Exercício 1 — Sistema de Biblioteca em Java
 
@@ -13,40 +13,39 @@ Implementação de um sistema utilizando os conceitos de:
 - Encapsulamento;
 - Polimorfismo.
 
-O sistema possui classes responsáveis pelo gerenciamento dos itens da biblioteca, dos usuários e das operações de empréstimo e devolução.
+O sistema permite gerenciar livros, revistas, usuários e empréstimos, respeitando as regras específicas de cada categoria.
 
-A classe `Dvd` também foi implementada para demonstrar a extensibilidade do sistema, permitindo adicionar uma nova categoria de item sem modificar os métodos existentes da classe `Biblioteca`.
+A classe `Dvd` também foi implementada como demonstração da extensibilidade do sistema, permitindo adicionar novos tipos de itens sem modificar os métodos existentes da classe `Biblioteca`.
 
 ### Como executar
 
 1. Abra a pasta `java` no IntelliJ IDEA.
 2. Acesse `src/Main.java`.
-3. Execute a classe `Main` para visualizar o funcionamento do sistema.
+3. Execute a classe `Main`.
 
 ## Exercício 2 — Modelagem do Banco de Dados
 
-Foi desenvolvido um banco de dados relacional utilizando PostgreSQL para armazenar as informações da biblioteca.
+Desenvolvimento de um banco de dados relacional utilizando PostgreSQL.
 
-O arquivo `sql/atividade5.sql` contém os comandos responsáveis pela criação e estruturação das seguintes tabelas:
+O arquivo `sql/atividade5.sql` contém os comandos para:
 
-- `item`: armazena os dados dos livros e revistas.
-- `usuario`: armazena os dados dos alunos e professores.
-- `emprestimo`: registra as retiradas e devoluções dos itens.
+- Criar as tabelas `item`, `usuario` e `emprestimo`;
+- Definir chaves primárias e estrangeiras;
+- Aplicar restrições de integridade;
+- Inserir dados para testes.
 
-Também foram definidas chaves primárias, chaves estrangeiras e restrições para garantir a integridade dos dados.
-
-O modelo relacional utiliza os tipos `LIVRO` e `REVISTA`, conforme o enunciado da atividade.
+No modelo relacional, os tipos de itens utilizados são `LIVRO` e `REVISTA`, conforme o enunciado da atividade.
 
 ## Exercício 3 — Consultas SQL
 
 O arquivo `sql/atividade6.sql` contém as quatro consultas solicitadas:
 
-1. Listagem de todos os itens do acervo, incluindo código, título, tipo e disponibilidade.
-2. Listagem dos empréstimos em aberto, apresentando o nome do usuário e o título do item.
+1. Listagem de todos os itens do acervo e suas disponibilidades.
+2. Listagem dos empréstimos em aberto, exibindo o usuário e o item emprestado.
 3. Cálculo do total de multas acumuladas por usuário.
 4. Identificação dos itens que nunca foram emprestados.
 
-As consultas utilizam recursos do SQL, como `JOIN`, `LEFT JOIN`, `GROUP BY`, `SUM()` e `IS NULL`.
+São utilizados recursos SQL como `JOIN`, `LEFT JOIN`, `GROUP BY`, `SUM()` e `IS NULL`.
 
 ## Estrutura do Projeto
 
@@ -75,3 +74,15 @@ ListaAtividadesJavaBD/
 └── sql/
     ├── atividade5.sql
     └── atividade6.sql
+```
+
+## Tecnologias Utilizadas
+
+- Java
+- PostgreSQL
+- SQL
+- IntelliJ IDEA
+
+---
+
+**Projeto desenvolvido para fins acadêmicos, com foco na aplicação prática dos conceitos de Programação Orientada a Objetos e Banco de Dados Relacionais.**
